@@ -13,10 +13,11 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- font awesome icons -->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-        type='text/css'>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,77 +34,255 @@
         crossorigin="anonymous"></script>
 
     <!-- header -->
-    <header>
-
+    <div class="container">
         <div class="profile">
-            <img src="img/aisyah.jpg" alt="Hi, I am Aisyah">
+            <img src="img/aisyah circle.png" alt="Hi, I am Aisyah">
             <p>Hi, My name is Siti Aisyah Atirah. <br> A sophomore majoring in Software Engineering at University of
                 Malaya
             </p>
+            <p>Find <a href="#project">projects</a> and <a href="#curricular">curricular activities</a> that I have
+                worked on below, my resume <a href="resume.pdf" download="SITI AISYAH ATIRAH_RESUME">here</a>.</p>
+
         </div>
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div id="project">
+            <h3>Projects</h3>
 
-                <div class="collapse navbar-collapse" style="justify-content: center;" id="navbarNavAltMarkup">
-                    <div class="navi navbar-nav">
-                        <a class="nav-item nav-link normal-link" href="#about-us">About</a>
-                        <a class="nav-item nav-link normal-link" href="#project">Project</a>
-                        <a class="nav-item nav-link normal-link" href="#curr">Curricular</a>
-                        <a class="nav-item nav-link normal-link" href="#illus">Illustrations</a>
-                        <a class="nav-item nav-link normal-link" href="#footer">Contact</a>
+            <!-- Modal - Demo for Alumni System-->
+            <div class="modal fade mb-0 p-2" id="alumni_demo" tabindex="-1" role="dialog"
+                aria-labelledby="alumni_demo_label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="alumni_demo_label">Alumni Web System
+                                Demo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <video src="img/video.mp4" controls></video>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Your Part Description</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
 
-    <div class="container" id="project">
-        <div class="row">
-            <h1>Project 1</h1>
+            <!-- Modal - Demo for Courier System-->
+            <div class="modal fade mb-0 p-2" id="courier_demo" tabindex="-1" role="dialog"
+                aria-labelledby="courier_demo_label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="courier_demo_label">Courier Web System
+                                Demo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <video src="img/video.mp4" controls></video>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Your Part Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="row p-cards">
+
+                <li class="col">
+                    <div class="p-card">
+                        <img src="img/alumni2.jpg" class="card__image" alt="Alumni Web System" />
+
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">Alumni Web System</h3>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">HTML</span>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">CSS</span>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">PHP</span>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">MySQL</span>
+                                </div>
+                            </div>
+                            <p class="card__description">A website intended to engage faculty with alumni and provide a
+                                way for faculty to keep in touch with their alumni</p>
+
+                            <div class="link float-right">
+                                <div class="d-flex flex-row">
+                                    <a href="https://github.com/amarabjamal/Online-Alumni-System" class="mb-0 p-2"><i
+                                            class="fab fa-github-alt"></i></a>
+
+                                    <!-- Button trigger modal -->
+                                    <div class="btn" data-toggle="modal" data-target="#alumni_demo">
+                                        <i class="fas fa-play-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="col">
+                    <div class="p-card">
+                        <img src="img/algo.jpg" class="card__image" alt="Courier Web System" />
+
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">Courier Web System</h3>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">Python</span>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">Plotly</span>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">HTML</span>
+                                </div>
+                            </div>
+                            <p class="card__description">A website aimed to help customers to decide best courier
+                                company to complete their delivery need. The decision made are based of customer's
+                                distance to courier's hub and company sentiment analysis</p>
+
+                            <div class="link float-right">
+                                <div class="d-flex flex-row">
+                                    <a href="https://github.com/radwanbj/AlgorithmsProject" class="mb-0 p-2"><i
+                                            class="fab fa-github-alt"></i></a>
+
+                                    <!-- Button trigger modal -->
+                                    <div class="btn" data-toggle="modal" data-target="#courier_demo">
+                                        <i class="fas fa-play-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="row p-cards">
+
+                <li class="col">
+                    <div class="p-card">
+                        <img src="img/pet.jpg" class="card__image" alt="Pet Game - Inspired by Tamagotchi" />
+
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">Pet Game - Inspired by Tamagotchi</h3>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">Java</span>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">OOP</span>
+                                </div>
+                            </div>
+                            <p class="card__description">A Java application that lets users create, feed, chat and play
+                                with a virtual pet</p>
+
+                            <div class="link float-right">
+                                <div class="d-flex flex-row">
+                                    <a href="https://github.com/aisyahatirah" class="mb-0 p-2"><i
+                                            class="fab fa-github-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="col">
+                    <div class="p-card">
+                        <img src="img/contact tracing.jpg" class="card__image" alt="El-Corona" />
+
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">El Corona</h3>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">Java</span>
+                                    <span class="badge badge-pill" style="background-color: #cd82a4;">Data
+                                        Structure</span>
+                                </div>
+                            </div>
+                            <p class="card__description">A system that helps hospital authorities to perform contact
+                                tracing and track past visits of Covid-19 patients.</p>
+
+                            <div class="link float-right">
+                                <div class="d-flex flex-row">
+                                    <a href="https://github.com/aisyahatirah" class="mb-0 p-2"><i
+                                            class="fab fa-github-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
 
-    <div class="container" id="curr">
-        <div class="row">
-            <h1>Activity 1</h1>
-        </div>
-    </div>
+        <div id="curricular">
+            <h3>Activities</h3>
+            <div class="row">
+                <div class="col a-card" style="background-color: #e17055;">
+                    <div class="a-card-icon">
+                        <img src="img/kids.png" alt="Volunteer at YoSH">
+                    </div>
+                    <div>
+                        <p>Volunteer, YoSH</p>
+                        <p>January 2019</p>
+                    </div>
+                    <div class="desc">
+                        <li>Bakti Sosial at Kampung Gabai, Hulu Langat, Selangor</li>
+                        <li>Helped prepare food and dish out meals to over 100 people in the village</li>
+                        <li>Planned and organized Scavenger Hunt games to play with the village’s kid</li>
+                    </div>
+                </div>
 
-    <div class="container" id="illus">
-        <div class="row">
-            <h1>Slide 1</h1>
-        </div>
-    </div>
+                <div class="col a-card" style="background-color: #f9ca24;">
+                    <div class="a-card-icon">
+                        <img src="img/volunteer.png" alt="Volunteer at Octacares">
+                    </div>
+                    <div>
+                        <p>Volunteer, Octacares Education</p>
+                        <p> February 2020</p>
+                    </div>
+                    <div class="desc">
+                        <li>Member of Technical Bureau</li>
+                        <li>Aided in the preparation and technical requirements for the 3-days event</li>
+                        <li>Managed to gather more than 20 kids in the village to participate in the activities held.
+                        </li>
+                    </div>
+                </div>
 
-    <!-- footer -->
-    <footer id="footer" class="mt-auto">
-        <div class="footer-link-section">
-            <div class="container">
-                <div class="row">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li><a href="#">Linkedin</a></li>
-                        <li><a href="#">Gmail</a></li>
-                        <li><a href="#">GitHub</a></li>
-                    </ul>
+                <div class="col a-card" style="background-color: #6a89cc;">
+                    <div class="a-card-icon">
+                        <img src="img/mentor.png" alt="STEM Mentor Mentee">
+                    </div>
+                    <div>
+                        <p>Mentor, UM STEM Centre</p>
+                        <p>May 2021</p>
+                    </div>
+                    <div class="desc">
+                        <li>Taught Mathematics and Science to Form 3 students.</li>
+                        <li>Planned and prepared content for weekly lessons including slides, and quizzes.</li>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Copyrights -->
-        <div class="copyright py-4">
-            <div class="container text-center">
+        <!-- Copyright -->
+        <div class="copyright py-4 float-left">
+            <div class="container">
                 <p class="mb-0 py-2">&copy;
                     <script>document.write(new Date().getFullYear())</script> Design and Code by Aisyah Atirah
                 </p>
             </div>
         </div>
-    </footer>
+
+        <div class="link py-4 float-right">
+            <div class="container d-flex flex-row">
+                <a href="https://github.com/aisyahatirah" class="mb-0 p-2"><i class="fab fa-github-alt"></i></a>
+                <a href="https://www.linkedin.com/in/siti-aisyah-atirah-318045207/" class="mb-0 p-2"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto: sitiaisyahatirahh@gmail.com" class="mb-0 p-2"><i class="fas fa-inbox"></i></a>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
